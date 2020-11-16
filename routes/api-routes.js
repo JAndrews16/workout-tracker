@@ -1,8 +1,7 @@
 const router = require("express").Router();
-const Workout = require("../models/Workout.js");
+const Workout = require("../models/Workout");
 const mongoose = require("mongoose");
 mongoose.set("useFindAndModify", false);
-//const db = require("../models");
 
 //module.exports = function(app) {
 

@@ -10,7 +10,6 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
-//mongodb+srv://jandrews16:chiaseed@cluster0.yejt8.mongodb.net/dbWorkout?retryWrites=true&w=majority
 mongoose.connect(process.env.MONGO_URI || "mongodb://localhost/workout", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
