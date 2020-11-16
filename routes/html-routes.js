@@ -1,28 +1,23 @@
-var path = require("path");
-
-module.exports = function(app) {
+const path = require("path");
+const router = require("express").Router();
 
   // index route loads index.html
-  app.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
-  });
-
-  app.get("/index", function(req, res) {
+  router.get("/", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/index.html"));
   });
 
   // exercise route loads exercise.html
-  app.get("/exercise", function(req, res) {
+  router.get("/exercise", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/exercise.html"));
   });
 
   // stats route loads stats.html
-  app.get("/stats", function(req, res) {
+  router.get("/stats", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/stats.html"));
   });
 
-  app.get("*", (req, res) => {
+  router.get("*", (req, res) => {
     res.redirect("/");
   });
 
-};
+module.exports = router;
