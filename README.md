@@ -20,7 +20,10 @@ Use this application to track workout and various exercise stats each week. This
 ## Questions
 GitHub Username: JAndrews16
 
+Deployed Link: https://hidden-river-77651.herokuapp.com/?id=5fb1ffefb7542d00178b9cff
 
-![github avatar](https://avatars3.githubusercontent.com/u/64562140?v=4)
 
 ![github follower badge](https://img.shields.io/github/followers/JAndrews16?color=blue&style=social)
+
+
+![github avatar](https://avatars3.githubusercontent.com/u/64562140?v=4)
