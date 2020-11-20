@@ -4,8 +4,6 @@ const Workout = require("../models/Workout.js");
 // mongoose.set("useFindAndModify", false);
 // const path = require("path");
 
-//module.exports = function(app) {
-
 router.get("/api/workouts", (req, res) => {
   Workout.find()
     .then(dbWorkout => {
@@ -17,7 +15,7 @@ router.get("/api/workouts", (req, res) => {
 });
 
 router.post("/api/workouts", ({ body }, res) => {
-  Workout.create({})
+  Workout.create(body)
     .then(dbWorkout => {
       res.json(dbWorkout);
     })
@@ -48,7 +46,5 @@ router.get("/api/workouts/range", (req, res) => {
       res.status(400).json(err);
     });
 });
-
-//}
 
 module.exports = router;
