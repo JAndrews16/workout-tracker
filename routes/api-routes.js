@@ -1,8 +1,5 @@
 const router = require("express").Router();
 const Workout = require("../models/Workout.js");
-// const mongoose = require("mongoose");
-// mongoose.set("useFindAndModify", false);
-// const path = require("path");
 
 router.get("/api/workouts", (req, res) => {
   Workout.find()
